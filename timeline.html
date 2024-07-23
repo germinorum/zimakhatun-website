@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ff6347;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #ffa07a;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/index.html">Home</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/quiz.html">Quiz</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/timeline.html">Timeline</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/truestories.html">True Stories</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/weekendgetaway.html">Weekend Getaway</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/nk.html">NK</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/ruffspace.html">Ruff Space</a>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE
+
+PE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Fun Timeline</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffeb3b;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4081;
+            font-size: 3em;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #333333;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ff4081;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .event {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .event::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #ff4081;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #ff4081;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #ff4081;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #ff4081;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #ff4081 transparent transparent;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: #ffffff;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        .content h2 {
+            color: #ff4081;
+        }
+        .content p {
+            color: #333333;
+        }
+        .navbar, .footer-nav {
+            overflow: hidden;
+            background-color: #ff4081;
+            padding: 10px 0;
+        }
+        .navbar a, .footer-nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover, .footer-nav a:hover {
+            background-color: #ff80ab;
+            color: white;
+        }
+        .footer-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#intro">Introduction</a>
+        <a href="#2030">2030</a>
+        <a href="#2040">2040</a>
+        <a href="#2050">2050</a>
+        <a href="#2060">2060</a>
+        <a href="#2070">2070</a>
+        <a href="#2080">2080</a>
+        <a href="#2090">2090</a>
+        <a href="#2100">2100</a>
+        <a href="#2110">2110</a>
+        <a href="#2120">2120</a>
+    </div>
+    <h1>Future Fun Timeline</h1>
+    <div class="intro" id="intro">
+        <p>Welcome to the Future Fun Timeline! 🌟 Here, we take a playful look at some exciting and imaginative events that could happen in the future. From virtual-reality classrooms to friendly alien encounters, explore the possibilities of tomorrow with us!</p>
+    </div>
+    <div class="timeline">
+        <div class="event left" id="2030">
+            <div class="content">
+                <h2>2030</h2>
+                <p>Virtual-reality classrooms become the norm, making learning more interactive and fun.</p>
+                <img src="https://example.com/vr-classroom.jpg" alt="Virtual-reality classroom">
+            </div>
+        </div>
+        <div class="event right" id="2040">
+            <div class="content">
+                <h2>2040</h2>
+                <p>Nanobots are used in medicine to repair cells and cure diseases.</p>
+                <img src="https://example.com/nanobots.jpg" alt="Nanobots in medicine">
+            </div>
+        </div>
+        <div class="event left" id="2050">
+            <div class="content">
+                <h2>2050</h2>
+                <p>Humans start living on Mars, with the first Martian city established.</p>
+                <img src="https://example.com/mars-city.jpg" alt="Martian city">
+            </div>
+        </div>
+        <div class="event right" id="2060">
+            <div class="content">
+                <h2>2060</h2>
+                <p>Smart clothing that can change colors and patterns with a tap becomes popular.</p>
+                <img src="https://example.com/smart-clothing.jpg" alt="Smart clothing">
+            </div>
+        </div>
+        <div class="event left" id="2070">
+            <div class="content">
+                <h2>2070</h2>
+                <p>Teleportation technology is developed, making travel instantaneous.</p>
+                <img src="https://example.com/teleportation.jpg" alt="Teleportation technology">
+            </div>
+        </div>
+        <div class="event right" id="2080">
+            <div class="content">
+                <h2>2080</h2>
+                <p>Robots become common household helpers, assisting with daily chores.</p>
+                <img src="https://example.com/robots.jpg" alt="Household robots">
+            </div>
+        </div>
+        <div class="event left" id="2090">
+            <div class="content">
+                <h2>2090</h2>
+                <p>Time travel is invented, allowing people to visit any moment in history or the future. The first time travelers visit the age of dinosaurs and the year 3000!</p>
+                <img src="https://example.com/time-travel.jpg" alt="Time travel">
+            </div>
+        </div>
+        <div class="event right" id="2100">
+            <div class="content">
+                <h2>2100</h2>
+                <p>Friendly aliens make contact with Earth, sharing advanced technology and knowledge. They become our intergalactic friends and partners in exploring the universe!</p>
+                <img src="https://example.com/aliens.jpg" alt="Friendly aliens">
+            </div>
+        </div>
+        <div class="event left" id="2110">
+            <div class="content">
+                <h2>2110</h2>
+                <p>AI and robots achieve true sentience, becoming valuable members of society. They help humans solve complex problems and create a harmonious world.</p>
+                <img src="https://example.com/ai-robots.jpg" alt="AI and robots">
+            </div>
+        </div>
+        <div class="event right" id="2120">
+            <div class="content">
+                <h2>2120</h2>
+                <p>Global collaboration leads to the development of a revolutionary climate change solution. This technology reverses the effects of global warming, restoring Earth's ecosystems and ensuring a sustainable future for all.</p>
+                <img src="https://example.com/climate-change.jpg" alt="Climate change solution">
+            </div>
+        </div>
+    </div>
+    <div class="footer-nav">
+        <nav>
+            <ul>
+                <li><a href="pages/index.html">Stinky Joke</a></li>
+                <li><a href="pages/Storytime.html">Storytime</a></li>
+                <li><a href="pages/nk.html">portfolio</a></li>
+                <li><a href="pages/timeline.html">True Stories</a></li>
+                <li><a href="pages/weekendgetaway.html">Time to go for a Holiday</a></li>
+                <li><a href="pages/quiz">History Quiz</a></li>
+                <li><a

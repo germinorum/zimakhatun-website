@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFBF0; /* Pastel yellow */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin: 20px;
+        }
+        h1 {
+            color: #FF8C94; /* Pastel pink */
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #5D5C61; /* Soft gray */
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #A8E6CF; /* Pastel green */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #85C1A7; /* Darker pastel green */
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment {
+            background-color: #FFD3B6; /* Pastel peach */
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #FFAAA5; /* Pastel pink */
+        }
+        .comment h3 {
+            margin: 0;
+            color: #FF8C94; /* Pastel pink */
+        }
+        .comment p {
+            margin: 5px 0 0;
+            color: #5D5C61; /* Soft gray */
+        }
+        .comment small {
+            display: block;
+            margin-top: 5px;
+            color: #999;
+        }
+        .comment-actions {
+            margin-top: 10px;
+        }
+        .comment-actions button {
+            background-color: #A8E6CF; /* Pastel green */
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .comment-actions button:hover {
+            background-color: #85C1A7; /* Darker pastel green */
+        }
+        .comment-actions .delete {
+            background-color: #FF8C94; /* Pastel pink */
+        }
+        .comment-actions .delete:hover {
+            background-color: #E57373; /* Darker pastel pink */
+        }
+        .phrase-box {
+            background-color: #A8E6CF; /* Pastel green */
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .phrase-box:nth-child(2n) {
+            background-color: #FFD3B6; /* Pastel peach */
+        }
+        .phrase-box:nth-child(3n) {
+            background-color: #FF8C94; /* Pastel pink */
+        }
+        .phrase-box:nth-child(4n) {
+            background-color: #FFFBF0; /* Pastel yellow */
+            color: #5D5C61; /* Soft gray */
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feel free to write anything that's on your mind!</h1>
+        <form action="post_comment.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Post Comment">
+        </form>
+        <div class="comments">
+            <h2>Comments</h2>
+            <!-- Comments will be displayed here -->
+        </div>
+    </div>
+    <div class="phrase-box">You are capable of amazing things!</div>
+    <div class="phrase-box">Believe in yourself and all that you are.</div>
+    <div class="phrase-box">Stay positive, work hard, make it happen.</div>
+    <div class="phrase-box">You are stronger than you think.</div>
+    <div class="phrase-box">Every day is a new beginning.</div>
+    <div class="phrase-box">You are enough just as you are.</div>
+    <div class="phrase-box">Dream big and dare to fail.</div>
+    <div class="phrase-box">Your potential is endless.</div>
+    <div class="phrase-box">Keep going, you are getting there.</div>
+    <div class="phrase-box">You are doing great!</div>
+    <script>
+        function editComment(id) {
+            // Redirect to edit page with comment ID
+            window.location.href = 'edit_comment.php?id=' + id;
+        }
+
+        function deleteComment(id) {
+            if (confirm('Are you sure you want to delete this comment?')) {
+                // Redirect to delete page with comment ID
+                window.location.href = 'delete_comment.php?id=' + id;
+            }
+        }
+
+        // Change background color every 3 seconds
+        const colors = ['#FFFBF0', '#A8E6CF', '#FFD3B6', '#FF8C94'];
+        let currentColorIndex = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+        }
+
+        setInterval(changeBackgroundColor, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000; /* Black font color */
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Add a background image for decoration */
+    background-size: cover;
+}
+
+header {
+    background-color: #ffb6c1; /* Baby Pink */
+    color: #000; /* Black font color */
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    color: #000; /* Black font color */
+    position: relative;
+}
+
+#about {
+    background-color: #add8e6; /* Baby Blue */
+}
+
+#contact {
+    background-color: #98fb98; /* Green */
+}
+
+#skills {
+    background-color: #dda0dd; /* Mauve */
+}
+
+#languages {
+    background-color: #d8bfd8; /* Baby Purple */
+}
+
+#education {
+    background-color: #ff69b4; /* Magenta */
+}
+
+#experience {
+    background-color: #87ceeb; /* Light Sky Blue */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+}
+
+a {
+    color: #000; /* Black font color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Decorative elements */
+header::before, header::after, section::before, section::after {
+    content: '';
+    position: absolute;
+    background: url('butterfly.png') no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+
+header::before {
+    top: 10px;
+    left: 10px;
+}
+
+header::after {
+    top: 10px;
+    right: 10px;
+}
+
+section::before {
+    bottom: 10px;
+    left: 10px;
+}
+
+section::after {
+    bottom: 10px;
+    right: 10px;
+}
+
+body::after {
+    content: '';
+    background: url('flowers.png') no-repeat center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+}
+
+body::before {
+    content: '';
+    background: url('cartoon.png') no-repeat center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+}

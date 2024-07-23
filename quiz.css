@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fun Website</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff6600;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #ff0000;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Fun Website!</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Blog.html">Blog</a>
+        <a href="stinkyjokes.html">Stinky Jokes</a>
+        <a href="Storytime.html">Storytime</a>
+    </nav>
+    <p>Explore the different sections of my website and have fun!</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Quiz</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin: 10px 0;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #ff80ab;
+        }
+        .result {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .quiz-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            .quiz-container {
+                padding: 10px;
+            }
+            .submit-btn {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Alien Quiz</h1>
+    <div class="quiz-container">
+        <img src="https://example.com/alien-quiz.jpg" alt="Alien Quiz" class="quiz-image">
+        <div class="question" id="question">Loading question...</div>
+        <ul class="options" id="options"></ul>
+        <button class="submit-btn" onclick="submitAnswer()">Submit</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const quizData = [
+                {
+                    question: "When did the Roswell UFO incident occur?",
+                    options: ["1947", "1952", "1961", "1973"],
+                    correct: "1947"
+                },
+                {
+                    question: "Which ancient civilization is known for depicting beings from the sky in their artwork?",
+                    options: ["Egyptians", "Romans", "Greeks", "Chinese"],
+                    correct: "Egyptians"
+                },
+                {
+                    question: "What is the name of the famous area in Nevada associated with UFO sightings?",
+                    options: ["Area 51", "Area 52", "Zone 51", "Zone 52"],
+                    correct: "Area 51"
+                },
+                {
+                    question: "In which year did the first reported alien abduction case occur?",
+                    options: ["1961", "1957", "1949", "1972"],
+                    correct: "1961"
+                },
+                {
+                    question: "Which movie features friendly aliens making contact with humans?",
+                    options: ["E.T. the Extra-Terrestrial", "Independence Day", "War of the Worlds", "The Day the Earth Stood Still"],
+                    correct: "E.T. the Extra-Terrestrial"
+                },
+                {
+                    question: "What year is predicted for the first human settlement on Mars?",
+                    options: ["2030", "2040", "2050", "2060"],
+                    correct: "2050"
+                },
+                {
+                    question: "Which technology is expected to enable instant travel in the future?",
+                    options: ["Teleportation", "Hyperloop", "Quantum Tunneling", "Wormholes"],
+                    correct: "Teleportation"
+                },
+                {
+                    question: "What is the name of the first artificial Earth satellite, launched by the Soviet Union in 1957?",
+                    options: ["Sputnik", "Apollo", "Voyager", "Hubble"],
+                    correct: "Sputnik"
+                },
+                {
+                    question: "Who was the British Prime Minister during World War II?",
+                    options: ["Winston Churchill", "Neville Chamberlain", "Clement Attlee", "Harold Macmillan"],
+                    correct: "Winston Churchill"
+                },
+                {
+                    question: "Which ancient civilization built the pyramids?",
+                    options: ["Romans", "Greeks", "Egyptians", "Mayans"],
+                    correct: "Egyptians"
+                }
+            ];
+
+            let currentQuestion = 0;
+            let score = 0;
+
+            function loadQuestion() {
+                const questionElement = document.getElementById('question');
+                const optionsElement = document.getElementById('options');
+                const currentQuizData = quizData[currentQuestion];
+
+                questionElement.textContent = currentQuizData.question;
+                optionsElement.innerHTML = '';
+
+                currentQuizData.options.forEach(option => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<input type="radio" name="option" value="${option}"> ${option}`;
+                    optionsElement.appendChild(li);
+                });
+            }
+
+            function submitAnswer() {
+                const options = document.getElementsByName('option');
+                let selectedOption;
+                for (const option of options) {
+                    if (option.checked) {
+                        selectedOption = option.value;
+                        break;
+                    }
+                }
+
+                if (selectedOption === quizData[currentQuestion].correct) {
+                    score++;
+                }
+
+                currentQuestion++;
+
+                if (currentQuestion < quizData.length) {
+                    loadQuestion();
+                } else {
+                    showResult();
+                }
+            }
+
+            function showResult() {
+                const resultElement = document.getElementById('result');
+                resultElement.textContent = `You scored ${score} out of ${quizData.length}!`;
+            }
+
+            loadQuestion();
+            window.submitAnswer = submitAnswer;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Subpage Title</title>
+    <!-- Add any necessary CSS or other meta tags here -->
+</head>
+<body>
+    <!-- Your subpage content goes here -->
+    <h1>Welcome to CommentPage!</h1>
+ 
+    <!-- Add more content specific to each subpage -->
+</body>
+</html>
+<nav>
+    <ul>
+        <li><a href="pages/stinkyjoke.html">Stinky Joke</a></li>
+        <li><a href="pages/Storytime.html">Storytime</a></li>
+        <li><a href="pages/Blog.html">Blog</a></li>
+        <li><a href="pages/About.html">About</a></li>
+        <li><a href="pages/Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien-Themed Social Media Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Light cyan background */
+            color: #333; /* Dark grey text */
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #00796b; /* Teal */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .feed, .post-form {
+            background-color: #ffffff; /* White background */
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+        }
+        .post-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0; /* Light grey background */
+            color: #333; /* Dark grey text */
+        }
+        .post-form button {
+            background-color: #00796b; /* Teal */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .post {
+            background-color: #f0f2f5; /* Light grey background */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .post p {
+            color: #333; /* Dark grey text */
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                text-align: left;
+                padding: 10px 20px;
+            }
+            .navbar a {
+                display: block;
+                margin: 5px 0;
+            }
+            .feed, .post-form {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://www.bing.com/images/create/green-and-brown-leaf-logo/1-668cfadb6ad6430882c9bc57f2dfcb9d?id=pBioCKKAdDzE0FwPTXJ%2b%2bA%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIG4.hLuusRp.GUtExO_9BJkr&edit=1&clientName=BING%20CHAT&sappdirectload=1&showselective=1&lng=en-US&FORM=SYDBIC" alt="Logo" class="logo">
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Messages</a>
+        <a href="#">Notifications</a>
+    </div>
+
+    <div class="post-form">
+        <textarea placeholder="What's on your mind?"></textarea>
+        <button>Post</button>
+    </div>
+
+    <div class="feed">
+        <h3>Feed</h3>
+        <div class="post">
+            <p><strong>John Doe</strong></p>
+            <p>Just finished a new project! Check it out.</p>
+        </div>
+        <div class="post">
+            <p><strong>Jane Smith</strong></p>
+            <p>Had a great time at the beach today!</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rainbow Bridge to Zorblax</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        .story {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .story p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="story">
+        <h1>The Rainbow Bridge to Zorblax</h1>
+        <p>In a quiet town nestled between rolling hills and sparkling rivers, lived a curious young coder named Alex. Alex loved creating vibrant web pages filled with interactive games and quizzes. One evening, while experimenting with a new alien-themed game, Alex stumbled upon a mysterious piece of code that seemed to glow with a life of its own.</p>
+        <p>Intrigued, Alex copied the code into their project and hit "Run." Suddenly, the screen flashed with a burst of colors, and a swirling vortex appeared, pulling Alex into the computer. When the spinning stopped, Alex found themselves standing on a shimmering rainbow bridge, stretching across a vast, starry sky.</p>
+        <p>At the end of the bridge was the planet Zorblax, home to friendly aliens who loved games and quizzes just as much as Alex did. The Zorblaxians welcomed Alex with open arms, eager to show their new friend around. They introduced Alex to their leader, Zog, a wise and playful alien with a knack for coding.</p>
+        <p>Zog explained that the glowing code was a portal to their world, created to find someone who could help them with a special project. The Zorblaxians wanted to build a grand interactive website to share their culture and games with the universe, but they needed Alex's expertise to make it happen.</p>
+        <p>Excited by the challenge, Alex got to work, collaborating with the Zorblaxians to design a website that was both beautiful and functional. They used vibrant colors, responsive designs, and easy-to-read schemes to ensure the site was accessible to all beings, no matter where they were from.</p>
+        <p>As the project progressed, Alex and the Zorblaxians became close friends, sharing stories and laughter under the twinkling stars. When the website was finally complete, it was a masterpiece of creativity and technology, filled with alien-themed games, quizzes, and interactive features that delighted visitors from across the galaxy.</p>
+        <p>With the project finished, it was time for Alex to return home. The Zorblaxians thanked Alex for their help and gave them a special gift: a glowing crystal that could open the portal to Zorblax whenever Alex wanted to visit.</p>
+        <p>Back in their room, Alex looked at the crystal and smiled, knowing that they had made friends and memories that would last a lifetime. And whenever they felt the need for adventure, they knew that the rainbow bridge to Zorblax was just a click away.</p>
+    </div>
+</body>
+</html>
+ 🌟
+

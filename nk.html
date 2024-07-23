@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ff6347;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #ffa07a;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/index.html">Home</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/quiz.html">Quiz</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/timeline.html">Timeline</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/truestories.html">True Stories</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/weekendgetaway.html">Weekend Getaway</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/nk.html">NK</a>
+        <a href="file:///C:/Users/truen/OneDrive/Desktop/HTML_CSS_Website/ruffspace.html">Ruff Space</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazima Khatun's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+                 
+
+
+
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f8f2e6;
+            color: #4b3d3d;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+
+        header {
+            background-color: #7d5a29;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            border-bottom: 5px solid #4b3d3d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            display: block;
+            margin: 0 auto;
+            border: 4px solid #c9bca2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .selfie {
+            border-radius: 10px;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 20px auto;
+            border: 4px solid #c9bca2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #9f7e4d;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            margin: 0 1rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            background-color: #4b3d3d;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #6e4f35;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            background: #9f7e4d;
+            display: none;
+        }
+
+        .nav-links a {
+            padding: 1rem;
+            border-bottom: 1px solid #fff;
+            text-align: center;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem 2rem;
+            border-radius: 10px;
+            color: #000;
+            position: relative;
+            background-color: #f9e4b7;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #about { background-color: #d2b48c; }
+        #contact { background-color: #f5deb3; }
+        #skills { background-color: #c4a484; }
+        #languages { background-color: #e0b0ff; }
+        #education { background-color: #ffcccb; }
+        #experience { background-color: #add8e6; }
+
+        /* Media query for hamburger menu */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: menu;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <img src="me.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Nazima Khatun</h1>
+        <p>MediaArts & CBE Academic Administrator</p>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <nav>
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#languages">Languages</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+        </div>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Salaam, I am Nazima Khatun, an accomplished IT professional with a passion for leveraging technology to drive business growth. 
+            With a solid foundation in Information Technology and a proven track record of success, 
+            I combine technical expertise with a strategic mindset to deliver innovative solutions. 
+            With strong communication and collaboration skills, I excel in cross-functional teams, 
+            ensuring seamless integration of technology solutions to achieve organizational objectives.</p>
+            Troubleshooting malfunction programs affecting database integrity. 
+            Worked closely with the Law of New Zealand and Maintaining the security and integrity of company databases 
+            while i worked at the labour party federation office in New Plymouth!</section>
+
+    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Phone: 021 084 36 126</p>
+        <p>Email: <a href="nazima.khatun@wintec.ac.nz">nazima.khatun@wintec.ac.nz</a></p>
+        <p>Address:Hamilton, Waikato</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Microsoft Azure
+                •	Visual Studio
+                •	GitHub Copilot
+                
+                
+                •	Visual C++
+                •	Visual C#
+                •	Visual Studio Code
+                •	Microsoft Office Suite 
+                </li>
+            <li>Configuring & Troubleshooting</li>
+            <li>Liaise with customers and update of ticket status</li>
+            <li>Microsoft Office 365 platforms</li>
+            <li>Time management skills</li>
+            <li>Analytical and problem-solving</li>
+            <li>PowerShell</li>
+            <li>HTML  CSS</li>
+            <li>Java Website</li>
+
+            <li>Great problem solver that thrives in fast-paced environments</li>
+            <li>Handled booking, reservations, payments, rooms, and other daily front office tasks</li>
+            <li>Backup and recovery of databases</li>
+
+            <li>Managing a high volume of work and excellent computer literacy skills   </li>
+            <li>Freshdesk + Zendesk</li>
+            <li>ITIL & Reporting</li>
+            <li>  </li>
+        </ul>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <p>English, Urdu, Hindi, Punjabi, Fijian-Hindi</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>WESTERN INSTITUTE OF TECHNOLOGY
+                <ul>
+                    <li>Diploma in Information Technology</li>
+                    <li>Postgraduate I.T from Wintec</li>
+                </ul>
+            </li>
+            <li>WESTERN INSTITUTE TECHNOLOGY
+                <ul>
+                    <li>Business in Technology & Management</li>
+                    <li>Cisco Certification: CCNA 1 & 2</li>
+                    <li>NDG Linux Unhatched</li>
+                    <li>Introduction to Data Science IoT & Cybersecurity</li>
+                    <li>Microsoft Azure Certificate</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Currently Working at Wintec University (2024 - 2024)</p>
+        <p>Position: Media Arts & CBEW Information Academic Administrator</p>
+        <p>Position: Database Administrator at Labour Party New Zealand (2022-2023)</p>
+        <p>Position: Senior Administrator at Womens Crsis Center Taranaki Branch (2013-2020)</p>
+
+        <h2>Contact Person</h2>
+        <ul>
+            <li>Blaine Rakena, Head of IT Department at WINTEC Email:<a href="mailto: blaine.rakena@wintec.ac.nz">blaine.rakena@wintec.ac.nz</a></li>
+            <li>Gary Waaka, Head of IT Department WITT Email:<a href="mailto:G.TEWAAK@WITT.AC.NZ">G.TEWAAK@WITT.AC.NZ</a></li>
+            <li>Muaz Khan, Vodafone Manager from One NZ, <a href="mailto:Muazkhan@vodaphone.co.nz">Muazkhan@vodaphone.co.nz</a></li>
+        </ul>
+    </section>
+
+     
+
+
+
+    <section id="Few More Life Experinecs!">
+        <h2>Few More Life Experinecs!</h2>
+        <p> 
+            
+           <p></p> •	Managing a high volume of work and excellent computer literacy skills.</p>
+           <p></p> •	Excellent verbal, written communication skills and positive and respectful attitude.</p>
+           <p></p>•	    Great service skills and aim to create a meaningful impact on clients and customers.</p>
+           <p></p>•	    Previous experience reviewing information and making complex decisions.</p>
+           <p></p>•	    Initiative, adaptability, curiosity, and sound judgement.</p>
+           <p></p>•	    Ability to operate effectively in a digital environment with a wide range of technology systems tools.</p>
+            
+            
+            
+            </section>
+
+             
+    <section id="selfie">
+        <h2><h1>"The pen is mightier than the sword" Edward Bulwer-Lytton in 1839</h1></h2>
+        <img src="zima selfie.jpg" alt="Zima's Selfie" class="selfie">
+    </section>
+
+
+
+</body>
+</html>
